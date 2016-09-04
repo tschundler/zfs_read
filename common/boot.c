@@ -204,7 +204,7 @@ autoboot(int timeout, char *prompt)
 
         for (;;) {
 	    if (ischar()) {
-	        c = getchar();
+	        c = xgetchar();
 #ifdef BOOT_PROMPT_123
 		if ((c == '\r') || (c == '\n')) {
 			yes = 1;

@@ -45,7 +45,7 @@ ngets(char *buf, int n)
     char *lp;
 
     for (lp = buf;;)
-	switch (c = getchar() & 0177) {
+	switch (c = xgetchar() & 0177) {
 	case '\n':
 	case '\r':
 	    *lp = '\0';

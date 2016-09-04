@@ -96,7 +96,7 @@ cons_probe(void)
 }
 
 int
-getchar(void)
+xgetchar(void)
 {
     int		cons;
     int		rv;

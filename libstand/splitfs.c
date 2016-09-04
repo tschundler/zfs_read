@@ -93,7 +93,7 @@ split_openfile(struct split_file *sf)
 	    return (EIO);
 	printf("\nInsert disk labelled %s and press any key...",
 	    sf->descsv[sf->curfile]);
-	getchar();
+	xgetchar();
 	putchar('\n');
     }
     sf->file_pos = 0;

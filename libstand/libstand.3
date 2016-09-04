@@ -501,7 +501,7 @@ Automatic decompression will allocate more
 than 64K of data per open file.
 .Pp
 Console access is performed via the
-.Fn getchar ,
+.Fn xgetchar ,
 .Fn putchar
 and
 .Fn ischar
@@ -522,7 +522,7 @@ The consumer must provide the following support functions:
 .Bl -hang -width 10n
 .It Xo
 .Ft int
-.Fn getchar void
+.Fn xgetchar void
 .Xc
 .Pp
 Return a character from the console, used by

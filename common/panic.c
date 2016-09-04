@@ -53,7 +53,7 @@ panic(const char *fmt,...)
 	printf("\n");
 
 	printf("--> Press a key on the console to reboot <--\n");
-	getchar();
+	xgetchar();
 	printf("Rebooting...\n");
 	exit(1);
 }

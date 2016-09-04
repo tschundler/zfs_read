@@ -70,7 +70,7 @@
 #include <string.h>
 
 #define CHK(fmt, args...)	printf("%s(%d): " fmt "\n", __func__, __LINE__ , ##args)
-#define PCHK(fmt, args...)	{printf("%s(%d): " fmt "\n", __func__, __LINE__ , ##args); getchar();}
+#define PCHK(fmt, args...)	{printf("%s(%d): " fmt "\n", __func__, __LINE__ , ##args); xgetchar();}
 
 /* Avoid unwanted userlandish components */
 #define _KERNEL
@@ -362,7 +362,7 @@ extern int	null_readdir(struct open_file *f, struct dirent *d);
  * Machine dependent functions and data, must be provided or stubbed by 
  * the consumer 
  */
-extern int		getchar(void);
+extern int		xgetchar(void);
 extern int		ischar(void);
 #if 0
 extern void		putchar(int);

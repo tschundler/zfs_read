@@ -98,7 +98,7 @@ pager_output(const char *cp)
 		printf("%s", pager_prompt1);
 		action = 0;
 		while (action == 0) {
-		    switch(getchar()) {
+		    switch(xgetchar()) {
 		    case '\r':
 		    case '\n':
 			p_freelines = 1;
